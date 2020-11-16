@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import './Navbar.css'
+import { Link } from 'react-scroll'
 //import { Button } from './Button'
 
 function Navbar() {
@@ -23,9 +24,10 @@ const showButton = () => {
 */
     return (
         <>
+
           <nav className='navbar'>
             <div className='navbar-container'>
-              <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+              <Link to='./sections/Header' className='navbar-logo' onClick="useEffect()">
                 CHRISTIAN JAMES DUMADAG
                 <i class='fab fa-typo3' />
               </Link>
@@ -34,31 +36,56 @@ const showButton = () => {
               </div>
 
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className='nav-item'>
-                  <Link to='/'  className='nav-links'  onClick={closeMobileMenu}>
-                    Home
-                  </Link>
+                <li className='nav-item' onClick={closeMobileMenu}>
+                    <Link 
+                        activeClass = "active"
+                        to = 'about'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={450}>
+                        About Me
+                    </Link>
                 </li>
-                <li className='nav-item'>
-                  <Link to='/skills' className='nav-links' onClick={closeMobileMenu} >
-                    Skills
-                  </Link>
+                <li className='nav-item' onClick={closeMobileMenu}>
+                <Link 
+                        activeClass = "active"
+                        to = 'skills'
+                        spy={true}
+                        smooth={true}
+                        offset={-75}
+                        duration={450}>
+                        Skills
+                    </Link>
                 </li>
-                <li className='nav-item'>
-                  <Link to='/porfolio' className='nav-links' onClick={closeMobileMenu}>
-                    Portfolio
-                  </Link>
+                <li className='nav-item' onClick={closeMobileMenu}>
+                <Link 
+                        activeClass = "active"
+                        to = 'projects'
+                        spy={true}
+                        smooth={true}
+                        offset={-75}
+                        duration={450}>
+                        Projects
+                    </Link>
                 </li>
-                <li className='nav-item'>
-                  <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                    Contact
-                  </Link>
+                <li className='nav-item' onClick={closeMobileMenu}>
+                <Link 
+                        activeClass = "active"
+                        to = 'contact'
+                        spy={true}
+                        smooth={true}
+                        offset={-75}
+                        duration={450}>
+                        Contact
+                    </Link>
                 </li>
               </ul>
             </div>
           </nav>
+
         </>
       );
-    }
+}
 
 export default Navbar

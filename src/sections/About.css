@@ -1,0 +1,32 @@
+.about-container{
+    background-color: #242424;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+    overflow: clip;
+    color: #ffffff
+}
+@font-face {
+    font-family: 'Simplifica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Simplifica'), url('SIMPLIFICA Typeface.woff') format('woff');
+    }
+
+.header-btns{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-title{
+    font-family: 'Simplifica';
+}
+
+.contact-title{
+    font-family: 'Simplifica';
+}
+
