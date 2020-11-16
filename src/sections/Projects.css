@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Bebas';
     font-style: normal;
@@ -25,4 +26,33 @@
 
 hr.solid {
     border-top: 3px solid #000000;
+=======
+@font-face {
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('BebasNeue-Regular.woff') format('woff');
+    }
+
+.projects-grid{
+    margin-right: 3px;
+    margin-left: 3px;
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+    object-fit: contain;
+}
+
+.project-container{
+    text-align: center;
+    height: 80vh;
+}
+
+.project-title{
+    font-family: 'Bebas';
+}
+
+hr.solid {
+    border-top: 3px solid #000000;
+>>>>>>> 91fee263c34ac08e741f2ce5d7c78718c8ae350f
   }
