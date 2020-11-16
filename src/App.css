@@ -5,38 +5,34 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.sign-up {
-  display: flex;
-  height: 90vh;
+App {
+  text-align: center;
+  height: 5000px;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
   align-items: center;
+  height: 20px;
   justify-content: center;
-  font-size: 3rem;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.scrollTop:hover{
+  opacity: 1;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
