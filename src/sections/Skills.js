@@ -39,6 +39,17 @@ function Skills() {
                     <img alt='mysql' src={require('../images/MySQL.webp')}></img>
                  </div>
             </div>
+            <div className = 'row'>
+                 <div className = 'column'>
+                    <img alt='HTML' src={require('../images/Ember.png')} height = '200px'></img>
+                 </div>
+                 <div className = 'column'>
+                    <img alt='js' src={require('../images/React.png')}></img>
+                 </div>
+                 <div className = 'column'>
+                    <img alt='js' src={require('../images/Git.webp')}></img>
+                 </div>
+            </div>
         </div>
     )
 }
