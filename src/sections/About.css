@@ -28,10 +28,14 @@
 }
 
 .about-description{
-    font-size: medium;
+    font-size:medium;
 }
 
 .contact-title{
     font-family: 'Simplifica';
+}
+
+.contact-description{
+    font-size: medium;
 }
 
