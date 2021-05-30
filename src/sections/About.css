@@ -12,6 +12,7 @@
 }
 @font-face {
     font-family: 'Simplifica';
+    font-size: large;
     font-style: normal;
     font-weight: normal;
     src: local('Simplifica'), url('SIMPLIFICA Typeface.woff') format('woff');
