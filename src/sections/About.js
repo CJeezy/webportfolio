@@ -7,7 +7,7 @@ function About(){
         return (
             <div className = 'about-container' id = 'about'>
                 <h1 className='about-title'>About Me</h1>
-                <p1 className='about-description'>My name is Christian, I am a 22 year old college student that intends on becoming a full-stack engineer. <br></br>
+                <p1 className='about-description'>My name is Christian or CJ, I am a 22 year old college student that intends on becoming a full-stack engineer. <br></br>
                   I am currently working on my Bachelor of Science degree in Computer Science at the College of Staten Island. <br></br>
                   When I am not at my computer, I enjoy playing volleyball, socializing with friends, and finding new places to eat!</p1>
     
