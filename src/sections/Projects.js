@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions} from 'react-mdl';
 import 'react-mdl/extra/material.css'
 import 'react-mdl/extra/material.js'
 import './Projects.css'
@@ -13,6 +13,7 @@ class Projects extends Component {
 
   toggleCategories() {
 
+    //REACT---------------REACT---------------REACT//
     if(this.state.activeTab === 0){
       return(
         <div className="projects-grid">
@@ -27,25 +28,39 @@ class Projects extends Component {
             </CardActions>
           </Card>
         </div>
-
-
       )
-    } else if(this.state.activeTab === 1) {
+    } 
+
+    //EMBER---------------EMBER---------------EMBER//
+    else if(this.state.activeTab === 1) {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>Jeopardy Board Game</CardTitle>
+            <CardTitle style={{color: '#000'}}>ExpenSplit</CardTitle>
             <CardText style={{textAlign: 'center'}}>
-              A jeopardy board game built on Java JSwing library
+              A lightweight version of a splitwise calculator that splits up the bills/expenses of a group of people and displays what is owed to whom.
             </CardText>
             <CardActions border>
-            <SocialIcon url="https://github.com/CJeezy/jeopardygame"/> 
+            <SocialIcon url="https://github.com/CJeezy/cost-breakdown-app"/> 
+            </CardActions>
+          </Card>
+
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle style={{color: '#000'}}>Parks-And-Recreation</CardTitle>
+            <CardText style={{textAlign: 'center'}}>
+              A website that displayed the nearby parks and lodging of a desired location. Using Google's API it would then show a images and directions to the park, as well as weather and ammenities.
+            </CardText>
+            <CardActions border>
+            <SocialIcon url="https://github.com/CJeezy/cost-breakdown-app"/> 
             </CardActions>
           </Card>
         </div>
-      )
-    } else if(this.state.activeTab === 2) {
+      ) 
+    }
+
+    //C#, C++---------------C#, C++---------------C#, C++// 
+    else if(this.state.activeTab === 2) {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
@@ -70,12 +85,35 @@ class Projects extends Component {
           </Card>
         </div>
       )
-    } else if(this.state.activeTab === 3) {
+    } 
+    
+    //JAVA---------------JAVA---------------JAVA//
+    else if(this.state.activeTab === 3) {
+      return (
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle style={{color: '#000'}}>Jeopardy Board Game</CardTitle>
+            <CardText style={{textAlign: 'center'}}>
+              A jeopardy board game built on Java JSwing library
+            </CardText>
+            <CardActions border>
+            <SocialIcon url="https://github.com/CJeezy/jeopardygame"/> 
+            </CardActions>
+          </Card>
+        </div>
+      ) 
+    }
+
+    //PYTHON---------------PYTHON---------------PYTHON//
+    else if(this.state.activeTab === 4) {
       return (
         <div><h1>Discord Bot in progress!</h1></div>
       )
     }
 
+
+  //END OF CARDS//
   }
 
 
@@ -87,9 +125,10 @@ class Projects extends Component {
           <h1 className = 'project-title'> Projects</h1>
           <p1>Here are some of my works! Be sure to check out my GitHub for more!</p1>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>JavaScript</Tab>
-          <Tab>Java</Tab>
+          <Tab>React</Tab>
+          <Tab>Ember/Glimmer</Tab>
           <Tab>C++ / C#</Tab>
+          <Tab>Java</Tab>
           <Tab>Python</Tab>
         </Tabs>
 

@@ -8,13 +8,13 @@ import ScrollTopArrow from '../components/ScrollTopArrow';
 
 function Home() {
     return(
-        <>
-        <Header/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <ScrollTopArrow/>
-        </>
+        <div>
+            <Header/>
+            <About/>
+            <Skills/>
+            <Projects/>
+            <ScrollTopArrow/>
+        </div>
     )
 }
 

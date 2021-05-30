@@ -1,19 +1,40 @@
 .header-container{
-    background: url(../images/img-home.jpg) center center/cover no-repeat;
+    background-color: #000;
     height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    align-items: center;    
     object-fit: contain;
 }
-  
 
-.photo {
-    margin-top: -140px;
-   }
+.particles{
+    left:0;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    object-fit: contain;
+}
+
+
+
+.header-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    object-fit: contain;
+}
 
 .name-text{
     color: #ffffff;
@@ -33,6 +54,6 @@
 
 .header-btns{
     display: flex;
-    justify-content: space-between;
+    justify-content: ce;
     column-gap: 5pc;
 }

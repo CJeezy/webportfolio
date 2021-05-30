@@ -1,12 +1,9 @@
-import React, { Component } from "react"
+import React from "react"
 import './About.css'
 import '../App.css'
 import {Button} from '../components/Button'
 
-
-class About extends Component{
-    state = {};
-    render(){
+function About(){
         return (
             <div className = 'about-container' id = 'about'>
                 <h1 className='about-title'>About Me</h1>
@@ -28,6 +25,5 @@ class About extends Component{
 
             </div>
         )
-    }
 }
 export default About;
