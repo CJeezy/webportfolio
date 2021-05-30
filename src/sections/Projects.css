@@ -12,6 +12,8 @@
     box-sizing:border-box;
     align-items: center;
     object-fit: contain;
+    text-align: center;
+    justify-content: center;
 }
 
 .project-container{
@@ -22,6 +24,15 @@
 .project-title{
     font-family: 'Bebas';
     text-align: center;
+}
+
+.card-title{
+    justify-content: center;
+}
+
+.card-text{
+    text-align: center;
+    width: 100%;
 }
 
 hr.solid {

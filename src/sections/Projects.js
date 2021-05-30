@@ -18,9 +18,9 @@ class Projects extends Component {
       return(
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000', height: 'auto'}} >Personal Website Portfolio</CardTitle>
-            <CardText>
+          <Card shadow={3} style={{minWidth: 'auto', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>Personal Website Portfolio</CardTitle>
+            <CardText className='card-text'>
               This website you are reading this card on! Made with the React.JS library and CSS
             </CardText>
             <CardActions border>   
@@ -36,9 +36,9 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>ExpenSplit</CardTitle>
-            <CardText style={{textAlign: 'center'}}>
+          <Card shadow={3} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>ExpenSplit</CardTitle>
+            <CardText className='card-text'>
               A lightweight version of a splitwise calculator that splits up the bills/expenses of a group of people and displays what is owed to whom.
             </CardText>
             <CardActions border>
@@ -46,13 +46,13 @@ class Projects extends Component {
             </CardActions>
           </Card>
 
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>Parks-And-Recreation</CardTitle>
-            <CardText style={{textAlign: 'center'}}>
+          <Card shadow={3} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>Parks-And-Recreation</CardTitle>
+            <CardText className='card-text'>
               A website that displayed the nearby parks and lodging of a desired location. Using Google's API it would then show a images and directions to the park, as well as weather and ammenities.
             </CardText>
             <CardActions border>
-            <SocialIcon url="https://github.com/CJeezy/cost-breakdown-app"/> 
+            <p style={{textAlign: 'center'}}>Privated GitHub repositiory</p>
             </CardActions>
           </Card>
         </div>
@@ -64,9 +64,9 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>Library Management System</CardTitle>
-            <CardText style={{textAlign: 'center'}}>
+          <Card shadow={3} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>Library Management System</CardTitle>
+            <CardText className='card-text'>
               A library management system intended to be implmented inside a dedicated library database. Uses C# and ASP.NET framework, with libraries from Bootstrap and Datatables
             </CardText>
             <CardActions border>
@@ -74,9 +74,9 @@ class Projects extends Component {
             </CardActions>
           </Card>
 
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>Unity Horror/Suspense Game</CardTitle>
-            <CardText style={{textAlign: 'center'}}>
+          <Card shadow={3} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>Unity Horror/Suspense Game</CardTitle>
+            <CardText className='card-text'>
               A game made with the Unity editor and C# scripts that have the player navigate a dark maze while being chased by enemies. GitHub does not allow for the entire project to be uploaded
             </CardText>
             <CardActions border>
@@ -92,9 +92,9 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
-            <CardTitle style={{color: '#000'}}>Jeopardy Board Game</CardTitle>
-            <CardText style={{textAlign: 'center'}}>
+          <Card shadow={3} style={{minWidth: '450', margin: 'auto', position: 'relative'}}>
+            <CardTitle className='card-title'>Jeopardy Board Game</CardTitle>
+            <CardText className='card-text'>
               A jeopardy board game built on Java JSwing library
             </CardText>
             <CardActions border>
