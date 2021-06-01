@@ -52,7 +52,7 @@ class Projects extends Component {
               A website that displayed the nearby parks and lodging of a desired location. Using Google's API it would then show a images and directions to the park, as well as weather and ammenities.
             </CardText>
             <CardActions border>
-            <p style={{textAlign: 'center'}}>Privated GitHub repositiory</p>
+            <p style={{textAlign: 'center'}}>Privated GitHub repository</p>
             </CardActions>
           </Card>
         </div>
