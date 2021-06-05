@@ -26,6 +26,7 @@
 .bar-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
     grid-gap: .5rem;
     text-align: center;
 }
@@ -74,8 +75,7 @@
 }
 
 img{
-    width: 15%;
-    height: 55%;
+    width: 25%;
 }
 
 .html{ width: 90%;  animation: html 2s;}

@@ -73,7 +73,7 @@ function SkillsList(){
             </div>
 
             <div>
-               <img alt='MySQL' src={require('../images/MySQL.webp')}></img>
+               <img alt='MySQL' src={require('../images/MySQL.png')}></img>
                <span class='bar'><span class='MySQL'></span></span>
             </div>
 
