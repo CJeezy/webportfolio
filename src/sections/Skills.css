@@ -1,40 +1,200 @@
-@font-face {
+:root{
+    --global-anim-speed: 5s;
+}
+
+.skills-header{
     font-family: 'Bebas';
     font-style: normal;
     font-weight: normal;
     src: local('Bebas'), url('BebasNeue-Regular.woff') format('woff');
-    }
+
+    text-align: center;
+    justify-content: center;
+}
 
 .skills-container{
-    background-color: #ffffff;
-    width: 100%;
-    display: block;
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('BebasNeue-Regular.woff') format('woff');
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    object-fit: contain;
+    
+    }
+
+.bar-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem;
     text-align: center;
 }
+
+@media only screen and (max-width: 1700px){
+    .bar-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .bar-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .bar-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+.bar{
+    width: 400px;
+    margin: 40px auto;
+    color:black;
+
+    margin-top: 10px;
+    background: #ffffff;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(black);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 5px;
+    float: left;
+    background: #2187e7b3; 
+}
+
 img{
-    width: auto;
-    max-width: 150px;
-    height: auto;
-    max-height: 100px;
-  }
-
-.row {
-    margin-top: 10pc;
-    display: flex;
-}
-  
-.column {
-    flex: 25%
+    width: 15%;
+    height: 55%;
 }
 
-.skills-title{
-    font-family: 'Bebas';
+.html{ width: 90%;  animation: html 2s;}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
 }
 
-hr.solid {
-    border-top: 3px solid #bbb;
+.CSS{ width: 75%;  animation: CSS 2s;}
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
 }
+
+.Javascript{ width: 90%;  animation: html 2s;}
+@keyframes Javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.React{ width: 65%;  animation: React 2s;}
+@keyframes React{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+.Ember{ width: 70%;  animation: Ember 2s;}
+@keyframes Ember{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.Cplusplus{ width: 70%;  animation: Cplusplus 2s;}
+@keyframes Cplusplus{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.Csharp{ width: 50%;  animation: Csharp 2s;}
+@keyframes Csharp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.Java{ width: 40%;  animation: Java 2s;}
+@keyframes Java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+.Python{ width: 35%;  animation: Python 2s;}
+@keyframes Python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+.Unity{ width: 50%;  animation: Unity 2s;}
+@keyframes Unity{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.MySQL{ width: 60%;  animation: MySQL 2s;}
+@keyframes MySQL{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.Git{ width: 75%;  animation: Git 2s;}
+@keyframes Git{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+

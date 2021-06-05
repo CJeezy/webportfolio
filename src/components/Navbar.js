@@ -27,10 +27,10 @@ const showButton = () => {
 
           <nav className='navbar'>
             <div className='navbar-container'>
-              <Link to='./sections/Header' className='navbar-logo' onClick="useEffect()">
-                CHRISTIAN JAMES DUMADAG
-                <i class='fab fa-typo3' />
-              </Link>
+              {/* <Link to='./sections/Header' className='navbar-logo' onClick="useEffect()">
+                CHRISTIAN DUMA
+              </Link> */}
+
               <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
               </div>
